@@ -6,7 +6,7 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/18 12:17:57 by nschat        #+#    #+#                 */
-/*   Updated: 2021/01/21 14:11:48 by nschat        ########   odam.nl         */
+/*   Updated: 2021/01/25 12:16:21 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,17 +50,6 @@ int	main(void)
 			std::cout << "Enter darkest secret:" << std::endl;
 			std::getline(std::cin, ds);
 			phonebook[i].set_all(fn, ln, nn, l, pa, ea, pn, bd, fm, uc, ds);
-			std::cout << phonebook[i].get_firstname() << std::endl;
-			std::cout << phonebook[i].get_lastname() << std::endl;
-			std::cout << phonebook[i].get_nickname() << std::endl;
-			std::cout << phonebook[i].get_login() << std::endl;
-			std::cout << phonebook[i].get_postaladdress() << std::endl;
-			std::cout << phonebook[i].get_emailaddress() << std::endl;
-			std::cout << phonebook[i].get_phonenumber() << std::endl;
-			std::cout << phonebook[i].get_birthdaydate() << std::endl;
-			std::cout << phonebook[i].get_favoritemeal() << std::endl;
-			std::cout << phonebook[i].get_underwearcolor() << std::endl;
-			std::cout << phonebook[i].get_darkestsecret() << std::endl;
 			if (i < 8)
 				i++;
 			else
