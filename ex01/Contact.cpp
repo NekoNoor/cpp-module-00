@@ -6,26 +6,26 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/18 12:38:00 by nschat        #+#    #+#                 */
-/*   Updated: 2021/01/21 13:54:21 by nschat        ########   odam.nl         */
+/*   Updated: 2021/03/18 14:42:19 by nekonoor      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iomanip>
 #include "Contact.hpp"
 
-void 		Contact::set_all (std::string fn, std::string ln, std::string nn, std::string l, std::string pa, std::string ea, std::string pn, std::string bd, std::string fm, std::string uc, std::string ds)
+void 		Contact::set_all (std::string input[11])
 {
-	firstname = fn;
-	lastname = ln;
-	nickname = nn;
-	login = l;
-	postaladdress = pa;
-	emailaddress = ea;
-	phonenumber = pn;
-	birthdaydate = bd;
-	favoritemeal = fm;
-	underwearcolor = uc;
-	darkestsecret  = ds;
+	firstname = input[0];
+	lastname = input[1];
+	nickname = input[2];
+	login = input[3];
+	postaladdress = input[4];
+	emailaddress = input[5];
+	phonenumber = input[6];
+	birthdaydate = input[7];
+	favoritemeal = input[8];
+	underwearcolor = input[9];
+	darkestsecret  = input[10];
 }
 
 std::string	Contact::get_firstname (void)

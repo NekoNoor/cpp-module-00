@@ -6,7 +6,7 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/18 12:17:57 by nschat        #+#    #+#                 */
-/*   Updated: 2021/01/25 13:15:40 by nschat        ########   odam.nl         */
+/*   Updated: 2021/03/18 14:40:21 by nekonoor      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,34 +21,19 @@ static std::string	truncate(std::string str)
 	return (str);
 }
 
+
 static Contact		add_contact()
 {
 	Contact contact;
-	std::string fn, ln, nn, l, pa, ea, pn, bd, fm, uc, ds;
+	std::string in_list[11];
+	static std::string print_list[11] {"first name: ", "last name: ", "nickname: ", "login: ", "postal address: ", "email address: ", "phone number: ", "birthday date: ", "favorite meal: ", "underwear color: ", "darkest secret: "};
 
-	std::cout << std::setw(17) << "first name: ";
-	std::getline(std::cin, fn);
-	std::cout << std::setw(17) << "last name: ";
-	std::getline(std::cin, ln);
-	std::cout << std::setw(17) << "nickname: ";
-	std::getline(std::cin, nn);
-	std::cout << std::setw(17) << "login: ";
-	std::getline(std::cin, l);
-	std::cout << std::setw(17) << "postal address: ";
-	std::getline(std::cin, pa);
-	std::cout << std::setw(17) << "email address: ";
-	std::getline(std::cin, ea);
-	std::cout << std::setw(17) << "phone number: ";
-	std::getline(std::cin, pn);
-	std::cout << std::setw(17) << "birthday date: ";
-	std::getline(std::cin, bd);
-	std::cout << std::setw(17) << "favorite meal: ";
-	std::getline(std::cin, fm);
-	std::cout << std::setw(17) << "underwear color: ";
-	std::getline(std::cin, uc);
-	std::cout << std::setw(17) << "darkest secret: ";
-	std::getline(std::cin, ds);
-	contact.set_all(fn, ln, nn, l, pa, ea, pn, bd, fm, uc, ds);
+	for (unsigned long i = 0; i < sizeof(print_list) / sizeof(std::string); i++)
+	{
+		std::cout << std::setw(17) << print_list[i];
+		std::getline(std::cin, in_list[i]);
+	}
+	contact.set_all(in_list);
 	return (contact);
 }
 

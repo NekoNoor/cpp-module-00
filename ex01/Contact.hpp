@@ -6,7 +6,7 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/18 12:28:35 by nschat        #+#    #+#                 */
-/*   Updated: 2021/01/21 13:54:27 by nschat        ########   odam.nl         */
+/*   Updated: 2021/03/18 14:42:34 by nekonoor      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ class Contact
 		std::string	darkestsecret;
 
 	public:
-		void set_all (std::string, std::string, std::string, std::string, std::string, std::string, std::string, std::string, std::string, std::string, std::string);
+		void set_all (std::string[11]);
 		std::string	get_firstname (void);
 		std::string	get_lastname (void);
 		std::string	get_nickname (void);
