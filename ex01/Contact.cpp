@@ -6,14 +6,14 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/18 12:38:00 by nschat        #+#    #+#                 */
-/*   Updated: 2021/03/18 14:42:19 by nekonoor      ########   odam.nl         */
+/*   Updated: 2021/03/18 15:06:41 by nekonoor      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iomanip>
 #include "Contact.hpp"
 
-void 		Contact::set_all (std::string input[11])
+void Contact::set_all (std::string input[11])
 {
 	firstname = input[0];
 	lastname = input[1];
@@ -28,57 +28,57 @@ void 		Contact::set_all (std::string input[11])
 	darkestsecret  = input[10];
 }
 
-std::string	Contact::get_firstname (void)
+std::string Contact::get_firstname (void)
 {
 	return (this->firstname);
 }
 
-std::string	Contact::get_lastname (void)
+std::string Contact::get_lastname (void)
 {
 	return (this->lastname);
 }
 
-std::string	Contact::get_nickname (void)
+std::string Contact::get_nickname (void)
 {
 	return (this->nickname);
 }
 
-std::string	Contact::get_login (void)
+std::string Contact::get_login (void)
 {
 	return (this->login);
 }
 
-std::string	Contact::get_postaladdress (void)
+std::string Contact::get_postaladdress (void)
 {
 	return (this->postaladdress);
 }
 
-std::string	Contact::get_emailaddress (void)
+std::string Contact::get_emailaddress (void)
 {
 	return (this->emailaddress);
 }
 
-std::string	Contact::get_phonenumber (void)
+std::string Contact::get_phonenumber (void)
 {
 	return (this->phonenumber);
 }
 
-std::string	Contact::get_birthdaydate (void)
+std::string Contact::get_birthdaydate (void)
 {
 	return (this->birthdaydate);
 }
 
-std::string	Contact::get_favoritemeal (void)
+std::string Contact::get_favoritemeal (void)
 {
 	return (this->favoritemeal);
 }
 
-std::string	Contact::get_underwearcolor (void)
+std::string Contact::get_underwearcolor (void)
 {
 	return (this->underwearcolor);
 }
 
-std::string	Contact::get_darkestsecret (void)
+std::string Contact::get_darkestsecret (void)
 {
 	return (this->darkestsecret);
 }
