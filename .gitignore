@@ -1,0 +1,9 @@
+ex00/.clangd
+ex00/compile_commands.json
+ex00/megaphone
+ex00/megaphone.o
+ex01/.clangd
+ex01/Contact.o
+ex01/compile_commands.json
+ex01/main.o
+ex01/myawesomephonebook

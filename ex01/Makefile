@@ -6,12 +6,12 @@
 #    By: nschat <nschat@student.codam.nl>             +#+                      #
 #                                                    +#+                       #
 #    Created: 2021/01/13 21:15:00 by nschat        #+#    #+#                  #
-#    Updated: 2021/01/18 12:47:42 by nschat        ########   odam.nl          #
+#    Updated: 2021/03/31 15:43:40 by nschat        ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
 CC = clang++
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -std=c++98
 
 SRC = main.cpp \
 	  Contact.cpp

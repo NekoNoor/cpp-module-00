@@ -6,7 +6,7 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/18 12:17:57 by nschat        #+#    #+#                 */
-/*   Updated: 2021/03/18 15:06:42 by nekonoor      ########   odam.nl         */
+/*   Updated: 2021/03/31 15:45:11 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ static std::string truncate(std::string str)
 
 static Contact add_contact()
 {
-	static std::string g_print_list[11] {"first name: ", "last name: ", "nickname: ", "login: ", "postal address: ", "email address: ", "phone number: ", "birthday date: ", "favorite meal: ", "underwear color: ", "darkest secret: "};
+	static std::string g_print_list[11] = {"first name: ", "last name: ", "nickname: ", "login: ", "postal address: ", "email address: ", "phone number: ", "birthday date: ", "favorite meal: ", "underwear color: ", "darkest secret: "};
 	Contact contact;
 	std::string in_list[11];
 
