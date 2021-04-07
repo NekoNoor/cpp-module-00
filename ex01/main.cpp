@@ -6,7 +6,7 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/18 12:17:57 by nschat        #+#    #+#                 */
-/*   Updated: 2021/04/07 12:44:37 by nschat        ########   odam.nl         */
+/*   Updated: 2021/04/07 13:04:46 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,8 +65,8 @@ static void print_contact(Contact contact)
 
 int main(void)
 {
-	Contact phonebook[8];
-	int		counter = 0;
+	Contact 		phonebook[8];
+	unsigned int	counter = 0;
 
 	for (std::string line; std::getline(std::cin, line);)
 	{
@@ -81,9 +81,11 @@ int main(void)
 		}
 		else if (line.compare("SEARCH") == 0)
 		{
+			if (counter == 0)
+				continue;
 			print_preview(phonebook, counter);
 			std::cout << "index: ";
-			int index;
+			unsigned int index;
 			std::cin >> index;
 			if (index < counter)
 				print_contact(phonebook[index]);
