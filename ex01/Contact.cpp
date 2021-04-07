@@ -6,11 +6,10 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/18 12:38:00 by nschat        #+#    #+#                 */
-/*   Updated: 2021/03/18 15:06:41 by nekonoor      ########   odam.nl         */
+/*   Updated: 2021/04/07 13:49:38 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iomanip>
 #include "Contact.hpp"
 
 void Contact::set_all (std::string input[11])

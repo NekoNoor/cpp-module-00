@@ -6,7 +6,7 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/18 12:17:57 by nschat        #+#    #+#                 */
-/*   Updated: 2021/04/07 13:04:46 by nschat        ########   odam.nl         */
+/*   Updated: 2021/04/07 14:25:22 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,9 +37,9 @@ static Contact add_contact()
 	return (contact);
 }
 
-static void print_preview(Contact phonebook[8], int counter)
+static void print_preview(Contact phonebook[8], unsigned long counter)
 {
-	for (int i = 0; i < counter; i++)
+	for (unsigned long i = 0; i < counter; i++)
 	{
 		std::cout << std::setw(10) << i << '|';
 		std::cout << std::setw(10) << truncate(phonebook[i].get_firstname()) << '|';
@@ -66,7 +66,7 @@ static void print_contact(Contact contact)
 int main(void)
 {
 	Contact 		phonebook[8];
-	unsigned int	counter = 0;
+	unsigned long	counter = 0;
 
 	for (std::string line; std::getline(std::cin, line);)
 	{
@@ -85,10 +85,17 @@ int main(void)
 				continue;
 			print_preview(phonebook, counter);
 			std::cout << "index: ";
-			unsigned int index;
-			std::cin >> index;
-			if (index < counter)
-				print_contact(phonebook[index]);
+			try
+			{
+				std::string index_string;
+				std::getline(std::cin, index_string);
+				unsigned long index = (unsigned long)std::stoi(index_string);
+				if (index < counter)
+					print_contact(phonebook[index]);
+			}
+			catch (std::invalid_argument)
+			{
+			}
 		}
 		continue;
 	}

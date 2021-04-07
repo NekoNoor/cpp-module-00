@@ -6,12 +6,13 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/18 12:28:35 by nschat        #+#    #+#                 */
-/*   Updated: 2021/03/18 15:05:36 by nekonoor      ########   odam.nl         */
+/*   Updated: 2021/04/07 14:28:00 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string>
-#include <iomanip>
+#ifndef CONTACT_HPP
+# define CONTACT_HPP
+# include <string>
 
 class Contact
 {
@@ -42,3 +43,4 @@ class Contact
 		std::string	get_underwearcolor (void);
 		std::string	get_darkestsecret (void);
 };
+#endif
