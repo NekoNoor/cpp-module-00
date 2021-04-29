@@ -6,7 +6,7 @@
 /*   By: nschat <nschat@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/18 12:17:57 by nschat        #+#    #+#                 */
-/*   Updated: 2021/04/07 14:25:22 by nschat        ########   odam.nl         */
+/*   Updated: 2021/04/29 15:17:55 by nschat        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,7 +89,7 @@ int main(void)
 			{
 				std::string index_string;
 				std::getline(std::cin, index_string);
-				unsigned long index = (unsigned long)std::stoi(index_string);
+				unsigned long index = (unsigned long)std::atoi(index_string.c_str());
 				if (index < counter)
 					print_contact(phonebook[index]);
 			}

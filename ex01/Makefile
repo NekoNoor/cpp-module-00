@@ -6,12 +6,12 @@
 #    By: nschat <nschat@student.codam.nl>             +#+                      #
 #                                                    +#+                       #
 #    Created: 2021/01/13 21:15:00 by nschat        #+#    #+#                  #
-#    Updated: 2021/04/07 14:25:07 by nschat        ########   odam.nl          #
+#    Updated: 2021/04/29 15:15:31 by nschat        ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
 CC = clang++
-CFLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic-errors
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic-errors
 
 SRC = main.cpp \
 	  Contact.cpp
@@ -23,10 +23,10 @@ NAME = myawesomephonebook
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CC) $(CFLAGS) $^ -o $@
+	$(CC) $(CXXFLAGS) $^ -o $@
 
 %.o: %.cpp
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CXXFLAGS) -c $< -o $@
 
 clean:
 	$(RM) $(OBJ)
